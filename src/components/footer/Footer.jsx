@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import LocalPostOfficeIcon from "@mui/icons-material/LocalPostOffice";
+import AppleIcon from '@mui/icons-material/Apple';
 
 const Footer = () => {
   return (
@@ -12,7 +13,9 @@ const Footer = () => {
           <h1 className="text-2xl font-bold text-black mb-1">
             Subscribe to our awesome emails.
           </h1>
-          <p className="mb-5">Get our latest offers and news straight in your inbox</p>
+          <p className="mb-5">
+            Get our latest offers and news straight in your inbox
+          </p>
           <input
             type="text"
             id="name"
@@ -20,16 +23,23 @@ const Footer = () => {
             placeholder="Please ener an email address"
             className="w-80 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
-          <button className="ml-3">Subscribe</button>
+          <button className="bg-black hover:bg-gray-700 text-white font-bold py-3 px-8 border rounded ">
+            Subscribe
+          </button>
         </div>
         <div>
           <h1 className="text-2xl font-bold text-black mb-1">
             Download our apps
           </h1>
           <p>Shop our products and offers on-the-go.</p>
-          <div>
-            <div></div>
-            <div></div>
+          <div className="flex">
+            <div>
+            <img style={{width: "200px", marginTop:"9px",height:"70px"}} src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" alt="" />
+            </div>
+   
+            <div>
+              <img style={{width: "200px", marginLeft: "10px", height:"90px"}} src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
