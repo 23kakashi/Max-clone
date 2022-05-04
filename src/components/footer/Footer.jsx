@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import LocalPostOfficeIcon from "@mui/icons-material/LocalPostOffice";
-import AppleIcon from '@mui/icons-material/Apple';
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font border-t border-gray-200">
+    <footer className="text-gray-600 body-font border-t border-gray-200" style={{width:"1300px", margin:"auto"}}>
       <div className="flex mt-10 mb-10 justify-between">
         <div>
           <h1 className="text-2xl font-bold text-black mb-1">
@@ -34,11 +33,11 @@ const Footer = () => {
           <p>Shop our products and offers on-the-go.</p>
           <div className="flex">
             <div>
-            <img style={{width: "200px", marginTop:"9px",height:"70px"}} src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" alt="" />
+            <img style={{width: "200px", marginTop:"9px",height:"70px"}} src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" alt="applestore" />
             </div>
    
             <div>
-              <img style={{width: "200px", marginLeft: "10px", height:"90px"}} src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png" alt="" />
+              <img style={{width: "200px", marginLeft: "10px", height:"90px"}} src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png" alt="platstore" />
             </div>
           </div>
         </div>
@@ -204,7 +203,7 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <Link className="text-gray-600 hover:text-gray-800" to="/about">
+                <Link className="text-gray-600 hover:text-gray-800" to="/">
                   About Us
                 </Link>
               </li>
