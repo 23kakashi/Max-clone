@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="container px-5 py-12 mx-auto border-t border-gray-200">
         <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3 ">
               Women
             </h2>
             <nav className="list-none mb-10">
@@ -87,7 +87,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Men
             </h2>
             <nav className="list-none mb-10">
@@ -124,7 +124,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Boys
             </h2>
             <nav className="list-none mb-10">
@@ -161,7 +161,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Girls
             </h2>
             <nav className="list-none mb-10">
@@ -198,7 +198,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               About Us
             </h2>
             <nav className="list-none mb-10">
@@ -235,7 +235,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               Help
             </h2>
             <nav className="list-none mb-10">
