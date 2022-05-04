@@ -1,6 +1,6 @@
 [
     {
-      "id":"0",
+      "id":0,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010855903-Orange-RUST-1000010855903-12012022_01-2100.jpg",
       "name": "MAX Embroidered Straight Kurta",
@@ -126,7 +126,7 @@
     },
     
     {
-      "id":"0",
+      "id":14,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010855903-Orange-RUST-1000010855903-12012022_01-2100.jpg",
       "name": "MAX Embroidered Straight Kurta",
@@ -135,7 +135,7 @@
     },
 
     {
-      "id":1,
+      "id":15,
       "image_url":
       "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010779795-Blue-BLUE-1000010779795-15122021_01-2100.jpg",
       "name": "MAX Textured Straight Kurta",
@@ -144,7 +144,7 @@
     },
 
     {
-      "id":2,
+      "id":16,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010278837-Black-Black-1000010278837-9292021_01-2100.jpg",
       "name": "MAX Textured Black Straight Kurta",
@@ -153,7 +153,7 @@
     },
     
     {
-      "id":3,
+      "id":17,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010766241-Pink-Peach-1000010766241-11112021_01-2100.jpg",
       "name": "MAX Printed 2-Pc Layered Asymmetric Kurta",
@@ -162,7 +162,7 @@
     },
     
     {
-      "id":4,
+      "id":18,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010766661-Blue-Blue-1000010766661-11112021_01-2100.jpg",
       "name": "MAX Embroidered Blue Straight Kurta",
@@ -171,7 +171,7 @@
     },
     
     {
-      "id":5,
+      "id":19,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010834611-Black-BLACK-1000010834611-15122021_01-2100.jpg",
       "name": "MAX Checked Band Collar Straight Kurta",
@@ -180,7 +180,7 @@
     },
     
     {
-      "id":6,
+      "id":20,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010766541-Pink-LIGHTPINK-1000010766541-15122021_01-2100.jpg",
       "name": "MAX Printed Band Collar Straight Kurta",
@@ -189,7 +189,7 @@
     },
     
     {
-      "id":7,
+      "id":21,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010834788-Green-Emerald-1000010834788-11182021_01-2100.jpg",
       "name": "MAX Embroidered Straight Kurta",
@@ -198,7 +198,7 @@
     },
     
     {
-      "id":8,
+      "id":22,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010763351-Beige-Beige-1000010763351-11302021_01-2100.jpg",
       "name": "MAX Printed Straight Kurta",
@@ -207,7 +207,7 @@
     },
     
     {
-      "id":9,
+      "id":23,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010785348-Grey-Grey-1000010785348-10132021_01-2100.jpg",
       "name": "MAX Printed Straight Kurta with Dupatta",
@@ -216,7 +216,7 @@
     },
     
     {
-      "id":10,
+      "id":24,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010834655-Yellow-MUSTARD-1000010834655-15122021_01-2100.jpg",
       "name": "MAX Embroidered Woven Straight Kurta",
@@ -225,7 +225,7 @@
     },
     
     {
-      "id":11,
+      "id":25,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010767021-Blue-BLUE-1000010767021-5012022_01-2100.jpg",
       "name": "MAX Printed Round Neck A-Line Kurta",
@@ -234,7 +234,7 @@
     },
 
     {
-      "id":12,
+      "id":26,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010397448-Black-Black-1000010397448-10132021_01-2100.jpg",
       "name": "MAX Printed Round Neck Straight Kurta",
@@ -243,7 +243,7 @@
     },
     
     {
-      "id":13,
+      "id":27,
       "image_url":
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010159462-Purple-Purple-1000010159462-10282021_01-2100.jpg",
       "name": "WOMEN'S REEBOK PRINT LEGGINGS ",
