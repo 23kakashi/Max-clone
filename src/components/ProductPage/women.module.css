@@ -1,4 +1,29 @@
 .main{
     display:grid;
     grid-template-columns: repeat(4,1fr);
+    gap :20px;
+    width:80%;
+    margin:auto;
+}
+.card{
+    margin-bottom:40px;
+
+}
+.btn{
+    background-color: rgb(33, 33, 251);
+    color:white;
+    height:40px;
+    width:150px;
+    border-radius: 07px;
+    border-style:none;
+}
+.card_img>img{
+    height:439.5px;
+    width:297.8px;
+}
+/* .card_header{
+    text-align: center;
+} */
+.TopHead{
+    margin-left:10%;
 }
