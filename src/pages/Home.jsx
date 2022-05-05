@@ -21,7 +21,7 @@ const Home = () => {
           &#62;{" "}
         </p>
       </Banner>
-      <section style={{ width: "1300px", margin: "20px auto" }}>
+      <section style={{ width: "70%", margin: "20px auto" }}>
         <div
           id="carouselExampleControls"
           className="carousel slide relative"
