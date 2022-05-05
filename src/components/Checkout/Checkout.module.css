@@ -1,0 +1,13 @@
+.checkout_header{
+    border-bottom: 2px solid #edeff1;
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #3d464d;
+    gap: 800px;
+    padding-top: 5px;
+    
+  }
