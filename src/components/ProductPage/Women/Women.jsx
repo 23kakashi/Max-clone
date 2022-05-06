@@ -1,0 +1,143 @@
+import React, { useEffect, useState } from "react";
+// import data from "./data.json";
+import style from "./women.module.css";
+
+const Women = () => {
+  // console.log(data);
+  const [show, setShow] = useState([]);
+  const [hide, setHide] = useState(false);
+  const [filterSize, setFilterSize] = useState("");
+  const [sortPrice, setSortPrice] = useState("");
+  const [filterColor , setFilterColor] = useState("")
+  const [filterBrand, setFilterBrand] = useState("")
+//   const []
+//   const [sortBrand,setSort]
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/dresses`)
+      .then((res) => res.json())
+      .then((data) => setShow(data))
+      .catch((er) => console.log(er));
+  }, []);
+
+  // console.log(show);
+//   console.log(filterSize);
+console.log(sortPrice);
+
+  return (
+    <>
+      <div className={style.Sflex}>
+        <select onChange={(e) => setFilterSize(e.target.value)}>
+        {/* <optgroup label="Swedish Cars"> */}
+
+
+          <option>Size</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+          {/* </optgroup> */}
+        </select>
+
+        <select onChange={(e) => setFilterColor(e.target.value)}>
+          <option>Color</option>
+          <option>White</option>
+          <option>Black</option>
+          <option>Red</option>
+          <option>Green</option>
+          <option>Blue</option>
+          <option>Pink</option>
+        </select>
+
+        <select onChange={(e)=> setFilterBrand(e.target.value)}>
+          <option>Brand</option>
+          <option>W FOR WOMEN</option>
+          <option>MAANYAVAR</option>
+          <option>AMPM</option>
+          <option>GLOBAL DESI</option>
+          <option>RAW MANGO</option>
+        </select>
+
+        <select>
+          <option>Catogary</option>
+          <option>Men</option>
+          <option>Women</option>
+          <option>Boys</option>
+          <option>Girls</option>
+        </select>
+
+        <select onClick={(e)=>setSortPrice(e.target.value)} >
+          <option>Price</option>
+          <option value="asc">High to Low</option>
+          <option value="dec">Low to High</option>
+        </select>
+
+        <select>
+          <option>Rating</option>
+          <option>★★★★★</option>
+          <option>★★★★ and above</option>
+          <option>★★★ and above</option>
+          <option>★★ and above</option>
+          <option>★ and above</option>
+        </select>
+      </div>
+      <div className={style.main}>
+        {show
+          .filter((ctgry) => {
+            if (filterSize === "") {
+              return ctgry;
+            } else {
+              return ctgry.size===filterSize;
+            }
+          })
+
+          .filter((clr) => {
+            if (filterColor === "") {
+              return clr;
+            } else {
+              return clr.color===filterColor;
+            }
+          })
+          .filter((brnd)=>{
+              if(filterBrand === ""){
+                  return brnd;
+              }
+              else{
+                  return brnd.brand===filterBrand;
+              }
+          })
+          .sort((a,b)=>{
+              if(sortPrice==="dec"){
+                  return a.price-b.price;
+              }
+              else if(sortPrice==="asc"){
+                  return b.price-a.price;
+              }
+              else{
+                  return 0;
+              }
+          })
+          .map((item) => (
+            <div
+              onMouseEnter={() => setHide((prev) => !prev)}
+              className={style.card}
+              key={item.id}
+            >
+              <div className={style.card_img}>
+                <img src={item.image_url} alt="images" />
+              </div>
+              <div className={style.card_header}>
+                <h3 className={style.price}>{"₹" + item.price}</h3>
+                <p>{item.name}</p>
+                {hide && <button className={style.btn}>ADD TO BASKET</button>}
+              </div>
+            </div>
+          ))}
+      </div>
+    </>
+  );
+};
+
+export default Women;

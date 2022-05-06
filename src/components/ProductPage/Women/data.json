@@ -9,7 +9,9 @@
       "price": 1549,
       "color":"Red",
       "size":"L",
-      "strikedoffprice": 1799
+      "strikedoffprice": 1799,
+      "category":"Women",
+      "brand":"GLOBAL DESI"
     },
 
     {
@@ -20,7 +22,9 @@
       "price": 1249,
       "color":"Blue",
       "size":"M",
-      "strikedoffprice": 1749
+      "strikedoffprice": 1749,
+      "category":"Women",
+      "brand":"RAW MANGO"
     },
 
     {
@@ -29,9 +33,11 @@
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010278837-Black-Black-1000010278837-9292021_01-2100.jpg",
       "name": "MAX Textured Black Straight Kurta",
       "price": 699,
-      "color":"Blue",
+      "color":"White",
       "size":"XS",
-      "strikedoffprice": 1245
+      "strikedoffprice": 1245,
+      "category":"Women",
+      "brand":"MAANYAVAR"
     },
     
     {
@@ -42,7 +48,9 @@
       "price": 1599,
       "color":"Pink",
       "size":"L",
-      "strikedoffprice": 1299    
+      "strikedoffprice": 1299,
+      "category":"Women",
+      "brand":"RAW MANGO"    
     },
     
     {
@@ -53,7 +61,9 @@
       "price": 599,
       "color":"Black",
       "size":"M",
-      "strikedoffprice": 1299
+      "strikedoffprice": 1299,
+      "category":"Women",
+      "brand":"W FOR WOMEN"
     },
     
     {
@@ -62,9 +72,11 @@
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010834611-Black-BLACK-1000010834611-15122021_01-2100.jpg",
       "name": "MAX Checked Band Collar Straight Kurta",
       "price": 1399,
-      "color":"Sky",
+      "color":"Yellow",
       "size":"XXL",
-      "strikedoffprice": 2799    
+      "strikedoffprice": 2799,
+      "category":"Women",
+      "brand":"MAANYAVAR"    
     },
     
     {
@@ -75,7 +87,9 @@
       "price": 1099,
       "color":"Blue",
       "size":"XXL",
-      "strikedoffprice": 1249    
+      "strikedoffprice": 1249,
+      "category":"Women",
+      "brand":"GLOBAL DESI"    
     },
     
     {
@@ -86,7 +100,9 @@
       "price": 699,
       "color":"Pink",
       "size":"M",
-      "strikedoffprice": 1489
+      "strikedoffprice": 1489,
+      "category":"Women",
+      "brand":"W FOR WOMEN"
     },
     
     {
@@ -95,9 +111,11 @@
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010763351-Beige-Beige-1000010763351-11302021_01-2100.jpg",
       "name": "MAX Printed Straight Kurta",
       "price": 699,
-      "color":"Purple",
+      "color":"Yellow",
       "size":"XL",
-      "strikedoffprice": 1235
+      "strikedoffprice": 1235,
+      "category":"Women",
+      "brand":"RAW MANGO"
     },
     
     {
@@ -108,7 +126,9 @@
       "price": 1699,
       "color":"Pink",
       "size":"XL",
-      "strikedoffprice": 2599    
+      "strikedoffprice": 2599,
+      "category":"Women",
+      "brand":"GLOBAL DESI"    
     },
     
     {
@@ -119,7 +139,9 @@
       "price": 599,
       "color":"Black",
       "size":"M",
-      "strikedoffprice": 2599
+      "strikedoffprice": 2599,
+      "category":"Women",
+      "brand":"MAANYAVAR"
     },
     
     {
@@ -130,7 +152,9 @@
       "price": 899,
       "color":"White",
       "size":"S",
-      "strikedoffprice": 6599
+      "strikedoffprice": 6599,
+      "category":"Women",
+      "brand":"GLOBAL DESI"
     },
 
     {
@@ -141,7 +165,9 @@
       "price": 949,
       "color":"Blue",
       "size":"S",
-      "strikedoffprice": 1899
+      "strikedoffprice": 1899,
+      "category":"Women",
+      "brand":"W FOR WOMEN"
     },
     
     {
@@ -152,7 +178,9 @@
       "price": 649,
       "color":"Pink",
       "size":"XL",
-      "strikedoffprice": 1799
+      "strikedoffprice": 1799,
+      "category":"Women",
+      "brand":"W FOR WOMEN"
     },
     
     {
@@ -163,7 +191,9 @@
       "price": 1549,
       "color":"Black",
       "size":"M",
-      "strikedoffprice": 1799
+      "strikedoffprice": 1799,
+      "category":"Women",
+      "brand":"AMPM"
     },
 
     {
@@ -174,7 +204,9 @@
       "price": 1249,
       "color":"Blue",
       "size":"L",
-      "strikedoffprice": 1749
+      "strikedoffprice": 1749,
+      "category":"Women",
+      "brand":"MAANYAVAR"
     },
 
     {
@@ -185,7 +217,9 @@
       "price": 699,
       "color":"Pink",
       "size":"XL",
-      "strikedoffprice": 1245
+      "strikedoffprice": 1245,
+      "category":"Women",
+      "brand":"AMPM"
     },
     
     {
@@ -196,7 +230,9 @@
       "price": 599,
       "color":"Yellow",
       "size":"L",
-      "strikedoffprice": 1299
+      "strikedoffprice": 1299,
+      "category":"Women",
+      "brand":"GLOBAL DESI"
     },
     
     {
@@ -207,7 +243,9 @@
       "price": 599,
       "color":"Black",
       "size":"M",
-      "strikedoffprice": 1299
+      "strikedoffprice": 1299,
+      "category":"Women",
+      "brand":"GLOBAL DESI"
     },
     
     {
@@ -218,7 +256,9 @@
       "price": 1399,
       "color":"White",
       "size":"S",
-      "strikedoffprice": 799  
+      "strikedoffprice": 799 ,
+      "category":"Women",
+      "brand":"RAW MANGO" 
     },
     
     {
@@ -227,9 +267,11 @@
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010766541-Pink-LIGHTPINK-1000010766541-15122021_01-2100.jpg",
       "name": "MAX Printed Band Collar Straight Kurta",
       "price": 1099,
-      "color":"Pink",
+      "color":"Green",
       "size":"XL",
-      "strikedoffprice": 1249    
+      "strikedoffprice": 1249,
+      "category":"Women",
+      "brand":"AMPM"    
     },
     
     {
@@ -240,7 +282,9 @@
       "price": 699,
       "color":"Black",
       "size":"M",
-      "strikedoffprice": 1489
+      "strikedoffprice": 1489,
+      "category":"Women",
+      "brand":"MAANYAVAR"
     },
     
     {
@@ -251,7 +295,9 @@
       "price": 699,
       "color":"Blue",
       "size":"S",
-      "strikedoffprice": 1235
+      "strikedoffprice": 1235,
+      "category":"Women",
+      "brand":"MAANYAVAR"
     },
     
     {
@@ -260,9 +306,11 @@
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010785348-Grey-Grey-1000010785348-10132021_01-2100.jpg",
       "name": "MAX Printed Straight Kurta with Dupatta",
       "price": 1699,
-      "color":"Gray",
+      "color":"White",
       "size":"XXS",
-      "strikedoffprice": 2599    
+      "strikedoffprice": 2599,
+      "category":"Women",
+      "brand":"RAW MANGO"    
     },
     
     {
@@ -271,9 +319,11 @@
         "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010834655-Yellow-MUSTARD-1000010834655-15122021_01-2100.jpg",
       "name": "MAX Embroidered Woven Straight Kurta",
       "price": 599,
-      "color":"Pink",
+      "color":"Green",
       "size":"XL",
-      "strikedoffprice": 2599
+      "strikedoffprice": 2599,
+      "category":"Women",
+      "brand":"GLOBAL DESI"
     },
     
     {
@@ -284,7 +334,9 @@
       "price": 899,
       "color":"Black",
       "size":"M",
-      "strikedoffprice": 6599
+      "strikedoffprice": 6599,
+      "category":"Women",
+      "brand":"AMPM"
     },
 
     {
@@ -295,7 +347,9 @@
       "price": 949,
       "color":"Red",
       "size":"S",
-      "strikedoffprice": 1899
+      "strikedoffprice": 1899,
+      "category":"Women",
+      "brand":"RAW MANGO"
     },
     
     {
@@ -306,7 +360,9 @@
       "price": 649,
       "color":"Blue",
       "size":"S",
-      "strikedoffprice": 1799
+      "strikedoffprice": 1799,
+      "category":"Women",
+      "brand":"AMPM"
     }
   ]
 }
