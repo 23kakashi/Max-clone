@@ -228,9 +228,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-gray-600 hover:text-gray-800" to="/">
+                  <a className="text-gray-600 hover:text-gray-800" href="https://www.linkedin.com/company/max-fashion-india/jobs/" target="_blank" rel="noreferrer">
                     Carrers
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link className="text-gray-600 hover:text-gray-800" to="/">
