@@ -5,7 +5,10 @@
     width:80%;
     margin:auto;
 }
-
+.headFlex{
+    display: flex;
+    gap:20px;
+}
 .headFlex .gold{
     color:rgb(217, 185, 3);
     border-style: none;
@@ -38,7 +41,6 @@
     margin-top:20px;
     border-style:none;
 }
-
 .card_img>img{
     height:439.5px;
     width:297.8px;

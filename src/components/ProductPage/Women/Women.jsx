@@ -5,11 +5,12 @@ import style from "./women.module.css";
 const Women = () => {
   // console.log(data);
   const [show, setShow] = useState([]);
-  const [hide, setHide] = useState(false);
+  // const [hide, setHide] = useState(false);
   const [filterSize, setFilterSize] = useState("");
   const [sortPrice, setSortPrice] = useState("");
-  const [filterColor , setFilterColor] = useState("")
-  const [filterBrand, setFilterBrand] = useState("")
+  const [filterColor , setFilterColor] = useState("");
+  const [filterBrand, setFilterBrand] = useState("");
+  const [filterRating,setFilterRating] =useState("");
 //   const []
 //   const [sortBrand,setSort]
 
@@ -74,22 +75,22 @@ console.log(sortPrice);
           <option value="dec">Low to High</option>
         </select>
 
-        <select>
+        <select onChange={(e)=> setFilterRating(e.target.value)}>
           <option>Rating</option>
           <option>★★★★★</option>
-          <option>★★★★ and above</option>
-          <option>★★★ and above</option>
-          <option>★★ and above</option>
-          <option>★ and above</option>
+          <option>★★★★</option>
+          <option>★★★</option>
+          <option>★★</option>
+          <option>★</option>
         </select>
       </div>
       <div className={style.main}>
         {show
-          .filter((ctgry) => {
+          .filter((sze) => {
             if (filterSize === "") {
-              return ctgry;
+              return sze;
             } else {
-              return ctgry.size===filterSize;
+              return sze.size===filterSize;
             }
           })
 
@@ -119,9 +120,18 @@ console.log(sortPrice);
                   return 0;
               }
           })
+          
+          .filter((rtng)=>{
+            if(filterRating===""){
+                return rtng;
+            }
+            else{
+                return rtng.rating===filterRating;
+            }
+        })
           .map((item) => (
             <div
-              onMouseEnter={() => setHide((prev) => !prev)}
+              // onMouseEnter={() => setHide((prev) => !prev)}
               className={style.card}
               key={item.id}
             >
@@ -131,7 +141,21 @@ console.log(sortPrice);
               <div className={style.card_header}>
                 <h3 className={style.price}>{"₹" + item.price}</h3>
                 <p>{item.name}</p>
-                {hide && <button className={style.btn}>ADD TO BASKET</button>}
+                {/* {hide &&  */}
+                <div className={style.headFlex}>
+                    <button className={style.gold}>{item.rating}</button>
+                    {/* <button>{item.size}</button> */}
+                    <select className={style.clrOpt}>
+                        <option>Color</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Green</option>
+                        <option>Black</option>
+                        <option>White</option>
+                    </select>
+                </div>
+                <button className={style.btn}>ADD TO BASKET</button>
+                {/* } */}
               </div>
             </div>
           ))}
