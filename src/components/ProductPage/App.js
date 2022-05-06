@@ -1,13 +1,16 @@
-import React from 'react'
-import Women from './Women'
+import React from "react";
+import Filter from "./Filter";
+import Women from "./Women";
+import style from "./women.module.css"
 
 const App = () => {
   return (
     <>
-    < Women />
-
+    <h1 className={style.TopHead}>Tops</h1>
+      <Filter />
+      <Women />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

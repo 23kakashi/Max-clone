@@ -27,3 +27,25 @@
 .TopHead{
     margin-left:10%;
 }
+
+/* ///////////SELECT STYLING PART///////////////// */
+
+.Sflex{
+    display: flex;
+    gap:25px;
+    margin-left: 10%;
+    margin-top:50px;
+    margin-bottom:150px;
+}
+.Sflex>select{
+    width:100px;
+    height:38px;
+    font-size: 16px;
+    border-radius:09px;
+    background-color:azure;
+
+}
+
+.Sflex>select>option{
+    background-color:azure;
+}
