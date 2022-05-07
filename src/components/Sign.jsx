@@ -1,100 +1,129 @@
 import React, { useState } from 'react'
-import { useNavigate} from "react-router"
+
 // import styled from 'styled-components';
 // import { Inputs } from './form.styled';
-import { useToast, Wrap, WrapItem } from '@chakra-ui/react'
+import { useToast } from '@chakra-ui/react'
 import Popup from 'reactjs-popup';
 import { Input,InputGroup,InputLeftAddon, PinInput, PinInputField } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 
-import Name from './Name';
-// import Name from './Name'
+
+
 const Sign = () => {
   const toast = useToast()
-  const statuses = ['success', 'error', 'warning', 'info']
+  // const statuses = ['success', 'error']
   
     const [formData,setForm]=useState("");
-  const navigate=useNavigate()
-    console.log(formData)
+   var obj=[];
+   
+ 
+ 
+  
+  
+
+     
+   
+
+   
     const handleForm=(e)=>{
         e.preventDefault();
-        
-    
+        obj.push(formData)
+        localStorage.setItem("data",JSON.stringify(obj))
+
+      
+       
     }
+
     const handleClick=(e)=>{
   const inputChange=e.target.name;
-        setForm({...formData,[inputChange]:e.target.value})
-        
+  setForm({...formData,[inputChange]:e.target.value})
+      
     }
   return (
-    <>
-    <Popup  trigger={<button> Trigger</button>}>
-      
-    <div style={{marginLeft:"20px",margin:"auto",height:"400px",width:"800px",border:"1px solid white",borderRadius:"5px",marginTop:"50px",fontSize:"50px",paddingLeft:"10px"}}>
-      <h1>Sign-In</h1>
-      <p style={{fontSize:"20px"}}>Enjoy the convenience of a single account across all participating brands</p>
-      <p style={{fontSize:"20px",fontWeight:"bold"}}>Mobile Number</p>
-        <form  onSubmit={handleForm} >
-        {/* <Inputs type="text" name="username" placeholder='Enter Username' onChange={handleClick}></Inputs>
-        <Inputs type="password" name="password"  placeholder='Enter Password' onChange={handleClick}></Inputs> */}
-      
-  <InputGroup  size='lg'  width='90%'>
-    <InputLeftAddon children='+91' />
-    <Input type='tel' placeholder='phone number'  onChange={handleClick}/>
-  </InputGroup>
-
-
- </form>
- 
- 
- <p style={{fontSize:"20px"}}>By creating your account you agree to our <a href="https://www.maxfashion.in/in/en/termsandconditions" style={{underLine:"blue"}}>Terms and Condition</a></p>
-
- 
-
-
-
-
-      
-  <Popup trigger={<Button 
-    size='md'
-  height='48px'
-  width='200px'
-  border='2px'
-  borderColor='red'
-  position="center"
-  margin="auto" 
   
-  > Signup</Button>}>
-  
+    <Popup  trigger={<><div style={{marginLeft:"20px",margin:"auto",height:"400px",width:"600px",border:"1px solid white",borderRadius:"5px",marginTop:"50px",fontSize:"50px",paddingLeft:"10px"}}>
+   <h1>Sign-In Signup</h1>
+   <p style={{fontSize:"15px"}}>Enjoy the convenience of a single account across all participating brands</p>
+   <p style={{fontSize:"15px",fontWeight:"bold"}}>Mobile Number</p>
+     <form  onSubmit={handleForm} >
+     {/* <Inputs type="text" name="username" placeholder='Enter Username' onChange={handleClick}></Inputs>
+     <Inputs type="password" name="password"  placeholder='Enter Password' onChange={handleClick}></Inputs> */}
+   
+<InputGroup  size='lg' border='2px solid blue' >
+ <InputLeftAddon  border='none'children='+91' />
+ <Input type='tel' border='none' name="mobileNumber" placeholder='phone number' onChange={handleClick}/>
+</InputGroup>
+<InputGroup size='lg'>
 
-      <h1>Enter The OTP</h1>
-       
+<Input type='text'  name="Name" placeholder=' Enter Name' onChange={handleClick}/>
+
+</InputGroup>
+<Popup trigger={<Button 
+ size='md'
+height='48px'
+width='200px'
+
+fontSize="2xl"
+position="center"
+marginLeft="50px" 
+color="blue"
+
+
+> 
+<input type="submit"/>
+</Button>}>
+  
+  <div style={{marginTop:"20px",}}>
+  <h1>Enter The OTP</h1>
+    
     <PinInput  >
     <PinInputField />
     <PinInputField />
     <PinInputField />
-    <PinInputField />
+    <PinInputField  />
      </PinInput>
-    
+  </div>
+
+
+ 
 </Popup>
 
+
+</form>
+
+
+<p style={{fontSize:"15px"}}>By creating your account you agree to our <a href="https://www.maxfashion.in/in/en/termsandconditions" style={{color:"blue"}}>Terms and Condition</a></p>
+
+
+<Button
+    onClick={() =>
+     toast({
+       title: 'Account created.',
+       description: "We've created your account for you.",
+       status: 'success',
+       duration: 9000,
+       isClosable: true,
+     })
+   }
+ >
+   submit
+  
+ </Button>
+
+
+
+   
+
 </div>
-<Button onClick={() =>
-    toast({
-      title: 'Account created.',
-      description: "We've created your account for you.",
-      status: 'success',
-      duration: 5000,
-      isClosable: true,
-    })
-  }>
- Submit
-</Button>
+
+ </>}>
+      
+   
 </Popup>
     
   
 
-    </>
+  
   
 
   )
