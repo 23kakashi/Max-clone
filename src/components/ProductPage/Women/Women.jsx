@@ -153,8 +153,8 @@ console.log(sortPrice);
                         <option>Black</option>
                         <option>White</option>
                     </select>
-                </div>
                 <button className={style.btn}>ADD TO BASKET</button>
+                </div>
                 {/* } */}
               </div>
             </div>

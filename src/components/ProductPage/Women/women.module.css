@@ -6,6 +6,9 @@
     margin:auto;
 }
 
+
+
+
 .headFlex .gold{
     color:rgb(217, 185, 3);
     border-style: none;
@@ -27,6 +30,15 @@
 .card{
     margin-bottom:40px;
 
+}
+
+.headFlex{
+    display: none;
+
+}
+
+.card:hover .headFlex{
+    display: block;
 }
 .btn{
     background-color: rgb(33, 33, 251);

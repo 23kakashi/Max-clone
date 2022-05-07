@@ -22,8 +22,8 @@ const Men = () => {
         <select onChange={(e)=>setFilterSize(e.target.value)}>
 
         {/* <optgroup label="Swedish Cars"> */}
-          <option>Size</option>
-          <option>XS</option>
+          <option value="">Size</option>
+          <option value="Xs">XS</option>
           <option>S</option>
           <option>M</option>
           <option>L</option>
