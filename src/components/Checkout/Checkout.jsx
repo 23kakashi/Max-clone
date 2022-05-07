@@ -1,11 +1,12 @@
 import React from 'react'
-import CheckoutHeader from './CheckoutHeader'
-import ShippingMethod from './ShippingMethod'
+import CheckoutHeader from './CheckoutHeader.jsx'
+import ShippingMethod from './ShippingMethod.jsx'
 const Checkout = () => {
   return (
 
       <div>
-        <div>  <CheckoutHeader />
+      <div> 
+         <CheckoutHeader />
       </div>
       <div>
         <ShippingMethod />

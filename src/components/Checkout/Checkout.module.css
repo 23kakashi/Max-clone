@@ -8,6 +8,42 @@
     font-size: 13px;
     color: #3d464d;
     gap: 800px;
-    padding-top: 5px;
-    
+    padding-top: 5px; 
+  }
+  .shipping_method{
+    height: auto;
+    width: 750px;
+    border: 1px solid red;
+    margin-left: 55px;
+    margin-top: 20px;
+  }
+  .shipping_method>h1{
+    color: #57575c;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .shipping_method2>form>input{
+      width: 50%;
+      height: 40px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+  }
+  .shipping_method2>form>label{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .shipping_method2>form>select{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
   }
