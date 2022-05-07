@@ -1,21 +1,11 @@
 // import logo from './logo.svg';
-
-import { Route, Routes } from 'react-router';
-import './App.css';
-import Navbar from './components/Navbar';
-import Sign from './components/Sign';
-
-
+import MainRoutes from "./routes/MainRoutes";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Routes>
-        <Route path="signin/*" element={<Sign/>}/>
-        
-      </Routes>
-    
+      <MainRoutes />
     </div>
   );
 }
