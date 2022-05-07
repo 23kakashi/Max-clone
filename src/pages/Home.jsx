@@ -258,12 +258,11 @@ const Home = () => {
 
         <div className="border-t border-gray-200 pb-10">
           <p className="text-4xl pt-12 pb-5">Summer Trends</p>
-          <div className="flex justify-between">
-            <div className="pr-5" >
+          <div className="flex">
+            <div className="pr-5">
               <img
                 src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-10modularblock-oneBythree-A-Women-01APR2022A.jpg"
                 alt="1"
-                style={{width:"100%"}}
               />
             </div>
             <div>
