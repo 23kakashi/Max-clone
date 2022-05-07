@@ -1,27 +1,25 @@
-import React, { useEffect, useState } from 'react'
-import style from "./men.module.css"
+import React, { useEffect, useState } from "react";
+import style from "./men.module.css";
 
 const Men = () => {
-    const [show , setShow] = useState([]);
-    const [filterSize,setFilterSize ] =useState("");
-    const [filterBrand, setFilterBrand] = useState("");
-    const [filterRating, setFilterRating] = useState("");
-    const [filterColor,setFilterColor] = useState("");
-    const [sortPrice,setSortPrice] = useState("");
+  const [show, setShow] = useState([]);
+  const [filterSize, setFilterSize] = useState("");
+  const [filterBrand, setFilterBrand] = useState("");
+  const [filterRating, setFilterRating] = useState("");
+  const [filterColor, setFilterColor] = useState("");
+  const [sortPrice, setSortPrice] = useState("");
 
-    useEffect(() => {
-        fetch(`http://localhost:8081/menspage`)
-        .then((res) => res.json())
-        .then((data) =>setShow(data))
-        .catch((er) => console.log(er));
-    }, []);
+  useEffect(() => {
+    fetch(`http://localhost:8081/menspage`)
+      .then((res) => res.json())
+      .then((data) => setShow(data))
+      .catch((er) => console.log(er));
+  }, []);
   return (
     <>
-
-<div className={style.Sflex}>
-        <select onChange={(e)=>setFilterSize(e.target.value)}>
-
-        {/* <optgroup label="Swedish Cars"> */}
+      <div className={style.Sflex}>
+        <select onChange={(e) => setFilterSize(e.target.value)}>
+          {/* <optgroup label="Swedish Cars"> */}
           <option value="">Size</option>
           <option value="Xs">XS</option>
           <option>S</option>
@@ -32,7 +30,7 @@ const Men = () => {
           {/* </optgroup> */}
         </select>
 
-        <select onChange={(e)=>setFilterColor(e.target.value)}>
+        <select onChange={(e) => setFilterColor(e.target.value)}>
           <option>Color</option>
           <option>White</option>
           <option>Black</option>
@@ -42,7 +40,7 @@ const Men = () => {
           <option>Pink</option>
         </select>
 
-        <select onChange={(e)=> setFilterBrand(e.target.value)}>
+        <select onChange={(e) => setFilterBrand(e.target.value)}>
           <option>Brand</option>
           <option>PALM ANGLE</option>
           <option>HERON PRESTON</option>
@@ -61,13 +59,13 @@ const Men = () => {
           <option>Girls</option>
         </select>
 
-        <select onClick={(e)=> setSortPrice(e.target.value)}>
+        <select onClick={(e) => setSortPrice(e.target.value)}>
           <option>Price</option>
           <option value="asc">High to Low</option>
           <option value="dec">Low to High</option>
         </select>
 
-        <select onChange={(e)=>setFilterRating(e.target.value)}>
+        <select onChange={(e) => setFilterRating(e.target.value)}>
           <option>Rating</option>
           <option>★★★★★</option>
           <option>★★★★</option>
@@ -77,86 +75,74 @@ const Men = () => {
         </select>
       </div>
 
-
-    <div className={style.main}>
+      <div className={style.main}>
         {show
-        .filter((sze)=> {
-            if(filterSize ===""){
-                return sze
+          .filter((sze) => {
+            if (filterSize === "") {
+              return sze;
+            } else {
+              return sze.size === filterSize;
             }
-            else{
-                return sze.size===filterSize;
+          })
+          .filter((brnd) => {
+            if (filterBrand === "") {
+              return brnd;
+            } else {
+              return brnd.brand === filterBrand;
             }
-        })
-        .filter((brnd) => {
-            if(filterBrand === ""){
-                return brnd;
+          })
+          .filter((rtng) => {
+            if (filterRating === "") {
+              return rtng;
+            } else {
+              return rtng.rating === filterRating;
             }
-            else{
-                return brnd.brand=== filterBrand;
+          })
+          .filter((clr) => {
+            if (filterColor === "") {
+              return clr;
+            } else {
+              return filterColor === clr.color;
             }
-        })
-        .filter((rtng)=>{
-            if(filterRating===""){
-                return rtng;
+          })
+          .sort((a, b) => {
+            if (sortPrice === "dec") {
+              return a.price - b.price;
+            } else if (sortPrice === "asc") {
+              return b.price - a.price;
+            } else {
+              return 0;
             }
-            else{
-                return rtng.rating===filterRating;
-            }
-        })
-        .filter((clr)=> {
-            if(filterColor===""){
-                return clr
-            }
-            else{
-                return filterColor===clr.color;
-            }
-        })
-        .sort((a,b) => {
-            if(sortPrice === "dec"){
-                return a.price-b.price;
-            }
-            else if(sortPrice === "asc"){
-                return b.price-a.price
-            }
-            else{
-                return 0;
-            }
-        })
-        
-        .map((item)=>(
-            <div className={style.card}key={item.id}>
-            <div className={style.card_img}>
-                <img src={item.image_url} alt="error loading pic"/>
-            </div>
-            <div className={style.card_header}>
-                <h3 className = {style.price}>{"₹" + item.price}</h3>
+          })
+
+          .map((item) => (
+            <div className={style.card} key={item.id}>
+              <div className={style.card_img}>
+                <img src={item.image_url} alt="error loading pic" />
+              </div>
+              <div className={style.card_header}>
+                <h3 className={style.price}>{"₹" + item.price}</h3>
                 <p>{item.name}</p>
                 <p>{item.category}</p>
                 <div className={style.headFlex}>
-                    <button className={style.gold}>{item.rating}</button>
-                    {/* <button>{item.size}</button> */}
-                    <select className={style.clrOpt}>
-                        <option>Color</option>
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Green</option>
-                        <option>Black</option>
-                        <option>White</option>
-                    </select>
+                  <button className={style.gold}>{item.rating}</button>
+                  {/* <button>{item.size}</button> */}
+                  <select className={style.clrOpt}>
+                    <option>Color</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Black</option>
+                    <option>White</option>
+                  </select>
                 </div>
                 <button className={style.btn}>ADD TO BASKET</button>
+              </div>
             </div>
-
-
-            </div>
-        ))
-        }
-    </div>
-
-
+          ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Men
+export default Men;
