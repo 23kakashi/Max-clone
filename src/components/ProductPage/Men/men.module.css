@@ -5,10 +5,10 @@
     width:80%;
     margin:auto;
 }
-.headFlex{
-    display: flex;
-    gap:20px;
-}
+
+
+
+
 .headFlex .gold{
     color:rgb(217, 185, 3);
     border-style: none;
@@ -17,33 +17,44 @@
 
 }
 .clrOpt{
-    font-size: 16px;
-    margin-left:35px;
+    font-size: 14px;
+    /* margin-left:35px; */
     /* justify-content: right; */
-    border-radius: 06px;
-    height:30px;
-    padding:5px;
-    background-color: azure;
+    /* border-radius: 06px; */
+    height:45px;
+    padding:10px;
+    width:46.5%;
+    margin-right: 10px;
     margin-top: 13px;
 
 }
+
 .card{
     margin-bottom:40px;
 
 }
+
+.headFlex{
+    display: none;
+
+}
+
+.card:hover .headFlex{
+    display: block;
+}
 .btn{
-    background-color: rgb(33, 33, 251);
+    background-color: rgb(48,58,178);
     color:white;
     height:40px;
-    width:200px;
+    width:100%;
     border-radius: 07px;
-    margin-left:35px;
     margin-top:20px;
     border-style:none;
 }
+
 .card_img>img{
-    height:439.5px;
-    width:297.8px;
+    height:300.5px;
+    width:100%;
 }
 /* .card_header{
     text-align: center;
@@ -55,18 +66,35 @@
 /* ///////////SELECT STYLING PART///////////////// */
 
 .Sflex{
-    display: flex;
-    gap:25px;
-    margin-left: 10%;
-    margin-top:50px;
-    margin-bottom:150px;
+    /* gap:10px; */
+    margin-bottom:100px;
+    height:150px;
+    margin-top:40px;
+    background-color: rgb(247,248,247)
+    
+    /* text-align: center; */
 }
-.Sflex>select{
-    width:100px;
-    height:38px;
-    font-size: 16px;
-    border-radius:09px;
-    background-color:azure;
+
+.ssflex{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin:auto;
+    width:80%;
+    gap:20px;
+    /* background-color: aqua; */
+    
+}
+.Sflex>.ssflex select{
+    width:160px;
+    margin-bottom: -20px;
+    margin-top:20px;
+    border:1px solid gray;
+    height:40px;
+    font-size:14px;
+    /* border-color:gray; */
+    color:gray;
+    /* font-size: 16px; */
+    /* background-color:azure; */
 
 }
 

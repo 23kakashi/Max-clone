@@ -28,10 +28,37 @@ console.log(sortPrice);
   return (
     <>
       <div className={style.Sflex}>
+      <div className={style.ssflex}>
+
+      <select onClick={(e)=>setSortPrice(e.target.value)} >
+          <option>Price</option>
+          <option value="asc">High to Low</option>
+          <option value="dec">Low to High</option>
+        </select>
+
+        <select>
+          <option>Type</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+
+        <select>
+          <option>Style</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        <select>
+          <option>Design</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+
+
         <select onChange={(e) => setFilterSize(e.target.value)}>
         {/* <optgroup label="Swedish Cars"> */}
-
-
           <option>Size</option>
           <option>XS</option>
           <option>S</option>
@@ -69,11 +96,6 @@ console.log(sortPrice);
           <option>Girls</option>
         </select>
 
-        <select onClick={(e)=>setSortPrice(e.target.value)} >
-          <option>Price</option>
-          <option value="asc">High to Low</option>
-          <option value="dec">Low to High</option>
-        </select>
 
         <select onChange={(e)=> setFilterRating(e.target.value)}>
           <option>Rating</option>
@@ -83,6 +105,7 @@ console.log(sortPrice);
           <option>★★</option>
           <option>★</option>
         </select>
+      </div>
       </div>
       <div className={style.main}>
         {show
@@ -143,9 +166,8 @@ console.log(sortPrice);
                 <p>{item.name}</p>
                 {/* {hide &&  */}
                 <div className={style.headFlex}>
-                    <button className={style.gold}>{item.rating}</button>
-                    {/* <button>{item.size}</button> */}
-                    <select className={style.clrOpt}>
+
+                <select className={style.clrOpt}>
                         <option>Color</option>
                         <option>Red</option>
                         <option>Blue</option>
@@ -153,6 +175,18 @@ console.log(sortPrice);
                         <option>Black</option>
                         <option>White</option>
                     </select>
+
+                    {/* <button className={style.gold}>{item.rating}</button> */}
+                    {/* <button>{item.size}</button> */}
+                <select className={style.clrOpt} style={{color:"gray"}}>
+                        <option>Select Size</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    
                 <button className={style.btn}>ADD TO BASKET</button>
                 </div>
                 {/* } */}
