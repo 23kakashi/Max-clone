@@ -58,6 +58,10 @@ export const ShippingMethod = () => {
           </select><br></br>
           <label >Building name or number</label><br></br>
           <input type="text" placeholder='Enter building name' ></input><br></br>
+          <label >Street name or number</label><br></br>
+          <input type="text" placeholder='Flat/House number,Floor,Building' ></input><br></br>
+          <label >Landmark (optional)</label><br></br>
+          <input type="text" placeholder='Landmark' ></input><br></br>
         </form>
       </div>
     </div>
