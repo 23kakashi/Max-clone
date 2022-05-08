@@ -316,8 +316,8 @@ export const NavbarSecond = () => {
     <>
       <Wrap>
         <nav>
-          <div class="wrapper">
-            <Link class="logo" to="/">
+          <div className="wrapper">
+            <Link className="logo" to="/">
               <img
                 style={{ width: "110px" }}
                 src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg"
@@ -326,59 +326,59 @@ export const NavbarSecond = () => {
             </Link>
             {/* <input type="radio" name="slider" id="menu-btn"/> */}
             {/* <input type="radio" name="slider" id="close-btn"/> */}
-            <ul class="nav-links">
+            <ul className="nav-links">
               <li>
                 {" "}
-                <Link class="desktop-item" to="/women">
+                <Link className="desktop-item" to="/women">
                   Women
                 </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
+                <label htmlFor="showMega" className="mobile-item"></label>
+                <div className="mega-box">
+                  <div className="content">
+                    <div className="row">
                       <header>Verieties of Women Dresses</header>
-                      <ul class="mega-links">
+                      <ul className="mega-links">
                         <li>
-                          <Link class="desktop-item" to="/tops">
+                          <Link className="desktop-item" to="/tops">
                             Tops
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/bottoms">
+                          <Link className="desktop-item" to="/bottoms">
                             Bottoms
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/indian-wear">
+                          <Link className="desktop-item" to="/indian-wear">
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/accessories">
+                          <Link className="desktop-item" to="/accessories">
                             Accessories
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/winterwear">
+                          <Link className="desktop-item" to="/winterwear">
                             Winterwear
                           </Link>
                         </li>
-                        {/* <li><Link class="desktop-item" to="/more">More</Link></li> */}
+                        {/* <li><Link className="desktop-item" to="/more">More</Link></li> */}
                       </ul>
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Bottoms-Desktop2-05Nov2019.jpg"
                         alt="1"
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-SportsWear-Desktop1-05Nov2019.jpg"
                         alt="2"
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Winterwear-Desktop1-05Nov2019.jpg"
                         alt="3"
@@ -390,60 +390,60 @@ export const NavbarSecond = () => {
 
               <li>
                 {" "}
-                <Link class="desktop-item" to="/men">
+                <Link className="desktop-item" to="/men">
                   Men
                 </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
+                <label htmlFor="showMega" className="mobile-item"></label>
+                <div className="mega-box">
+                  <div className="content">
+                    <div className="row">
                       <header>Verieties of Men Dresses</header>
-                      <ul class="mega-links">
+                      <ul className="mega-links">
                         <li>
-                          <Link class="desktop-item" to="/shirt">
+                          <Link className="desktop-item" to="/shirt">
                             Shirts
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/pent">
+                          <Link className="desktop-item" to="/pent">
                             Pents
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/indian-wear">
+                          <Link className="desktop-item" to="/indian-wear">
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/accessories">
+                          <Link className="desktop-item" to="/accessories">
                             Accessories
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/winterwear">
+                          <Link className="desktop-item" to="/winterwear">
                             Winterwear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/more">
+                          <Link className="desktop-item" to="/more">
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Ethnicwear-Desktop1-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Tops-Desktop2-19May2021.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Bottoms-Desktop3-05Nov2019.jpg "
                         alt=""
@@ -455,60 +455,60 @@ export const NavbarSecond = () => {
 
               <li>
                 {" "}
-                <Link class="desktop-item" to="/girls">
+                <Link className="desktop-item" to="/girls">
                   Girls
                 </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
+                <label htmlFor="showMega" className="mobile-item"></label>
+                <div className="mega-box">
+                  <div className="content">
+                    <div className="row">
                       <header>Verieties of Girls Dresses</header>
-                      <ul class="mega-links">
+                      <ul className="mega-links">
                         <li>
-                          <Link class="desktop-item" to="/tops">
+                          <Link className="desktop-item" to="/tops">
                             Tops
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/bottoms">
+                          <Link className="desktop-item" to="/bottoms">
                             Bottoms
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/indian-wear">
+                          <Link className="desktop-item" to="/indian-wear">
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/accessories">
+                          <Link className="desktop-item" to="/accessories">
                             Accessories
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/winterwear">
+                          <Link className="desktop-item" to="/winterwear">
                             Winterwear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/more">
+                          <Link className="desktop-item" to="/more">
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop1-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop2-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-OE-Desktop1-05May22.jpg"
                         alt=""
@@ -520,60 +520,60 @@ export const NavbarSecond = () => {
 
               <li>
                 {" "}
-                <Link class="desktop-item" to="/boys">
+                <Link className="desktop-item" to="/boys">
                   Boys
                 </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
+                <label htmlFor="showMega" className="mobile-item"></label>
+                <div className="mega-box">
+                  <div className="content">
+                    <div className="row">
                       <header>Verieties of Boys Dresses</header>
-                      <ul class="mega-links">
+                      <ul className="mega-links">
                         <li>
-                          <Link class="desktop-item" to="/shirt">
+                          <Link className="desktop-item" to="/shirt">
                             Shirts
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/pent">
+                          <Link className="desktop-item" to="/pent">
                             Pents
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/indian-wear">
+                          <Link className="desktop-item" to="/indian-wear">
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/accessories">
+                          <Link className="desktop-item" to="/accessories">
                             Accessories
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/winterwear">
+                          <Link className="desktop-item" to="/winterwear">
                             Winterwear
                           </Link>
                         </li>
                         <li>
-                          <Link class="desktop-item" to="/more">
+                          <Link className="desktop-item" to="/more">
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-OE-Desktop1-05May2022.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-BabyBoy-Desktop4-04Mar2022.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="row">
+                    <div className="row">
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-Shoes-Desktop1-05Nov2019.jpg"
                         alt=""
@@ -587,7 +587,7 @@ export const NavbarSecond = () => {
                 <label>
                   <SearchOutlinedIcon />
                 </label>
-                <input type="text" placeholder="What are you looking for?" />
+                <input type="text" placeholder="What are you looking htmlFor?" />
               </div>
 
               <li>
@@ -655,7 +655,7 @@ color="blue"
     onClick={() =>
      toast({
        title: 'Account created.',
-       description: "We've created your account for you.",
+       description: "We've created your account htmlFor you.",
        status: 'success',
        duration: 9000,
        isClosable: true,
@@ -681,8 +681,8 @@ color="blue"
                 </Link>
               </li>
             </ul>
-            <label for="menu-btn" class="btn menu-btn">
-              <i class="fas fa-bars"></i>
+            <label htmlFor="menu-btn" className="btn menu-btn">
+              <i className="fas fa-bars"></i>
             </label>
           </div>
         </nav>
