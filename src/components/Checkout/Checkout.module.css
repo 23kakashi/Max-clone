@@ -49,10 +49,10 @@
   }
   .payment_method{
     margin-top: 20px;
-    height: 600px;
+    height: 510px;
     width: 750px;
     margin-left: 55px;
-    /* border: 1px solid red; */
+    border-bottom: 1px solid #ccc;
   }
   .payment_method2{
     display: flex;
@@ -72,4 +72,39 @@
   }
   .payment_method3>form{
     margin-top: 20px;
+  }
+  .payment_method3>form>select{
+    width: 15%;
+    height: auto;
+    padding: 12px 20px;
+    /* margin: 8px 5px; */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  .payment_method4{
+    display: inline-block;
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .Payment_other{
+    margin-top: 20px;
+    height: auto;
+    width: 750px;
+    margin-left: 55px;
+    /* border: 1px solid red; */
+  }
+  .Payment_other2{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 30px;
+  }
+  .Payment_other2>div{
+    margin-top: 15px;
   }
