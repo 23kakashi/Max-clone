@@ -48,7 +48,7 @@ export const NavbarTop = () => {
     <>
       {/* keep all the NavLinks here */}
       <Wrapper >
-        <div class="left">
+        <div className="left">
           <div>
             {" "}
             <LocalShippingIcon />{" "}
@@ -65,7 +65,7 @@ export const NavbarTop = () => {
             <Link to="/click-and-collect"> Click & Collect </Link>{" "}
           </div>
         </div>
-        <div class="right">
+        <div className="right">
           <div>
             {" "}
             <Link to="/download-our-app">DownLoad Our Apps</Link>{" "}
