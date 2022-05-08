@@ -1,4 +1,4 @@
-import React,{useState}from "react";
+import React,{useState,useEffect}from "react";
 import { Link } from "react-router-dom";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
@@ -6,6 +6,7 @@ import { useToast } from '@chakra-ui/react'
 import Popup from 'reactjs-popup';
 import { Input,InputGroup,InputLeftAddon, PinInput, PinInputField } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
+import { BiRupee } from 'react-icons/bi';
 
 import styled from "styled-components";
 
@@ -299,6 +300,7 @@ const Wrap = styled.div`
 export const NavbarSecond = () => {
   // const { token } = useContext(AuthContext);
   // use token to chnage the text from Login to Logout once logged in successfully
+  // signup
   const toast = useToast()
   const [formData,setForm]=useState("");
    var obj=[];
@@ -310,7 +312,20 @@ export const NavbarSecond = () => {
    const handleClick=(e)=>{
   const inputChange=e.target.name;
   setForm({...formData,[inputChange]:e.target.value})
-   }
+ }
+//  Basket
+const [data,setItems]=useState([])
+    // console.log(data)
+    useEffect(()=>{
+        //  let items= JSON.parse(localStorage.getItem("cartitems")); 
+        let cartitems=[{
+            image:"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+             Size:"xl",
+             Name:"Reebok Dress for Men",
+             Price:349  
+        }]
+     setItems(cartitems)
+    },[])
 
   return (
     <>
@@ -594,9 +609,7 @@ export const NavbarSecond = () => {
                 <Link to="/signin">Sign Up</Link>{" "}
               </li>
               <li>
-                
-                {/* start */}
-                <Popup  trigger={<button>Sign In</button>}>
+            <Popup  trigger={<button>Sign In</button>}>
                   <div style={{marginLeft:"20px",margin:"auto",height:"400px",width:"600px",border:"1px solid white",borderRadius:"5px",marginTop:"50px",fontSize:"50px",paddingLeft:"10px",background:"white"}}>
    <h1>Sign-In Signup</h1>
    <p style={{fontSize:"15px"}}>Enjoy the convenience of a single account across all participating brands</p>
@@ -673,12 +686,57 @@ color="blue"
 </div>
 </Popup>
 {/* //end */}
+</li>
+  <li style={{marginLeft:"6px"}}>
+               {/* Start */}
+               <Popup trigger={<button style={{fontSize:"18px"}}>Basket <LocalMallRoundedIcon/></button> }>
+            
+        <div style={{height:"auto",width:"400px",border:"white",marginLeft:"200px",padding:"5px 5px 0px 5px",background:"white"}}>
+        <p style={{fontWeight:"bold"}}>Items Count:{data.length}</p>
+            <div style={{border:" 1px solid black",fontWeight:"bold",paddingLeft:"3px"}}> 
+           <p> <p style={{color:'red'}}> MISSED OFFER:</p>Get 10% Off on shopping for Kidswear worth 999 & above, code- KIDS10</p>
+           </div>
+           <div style={{border:"1px solid black",fontWeight:"bold",paddingLeft:"3px"}}> 
+           <p> <p style={{color:'red'}}> MISSED OFFER:</p> Flat 200 Off on shopping worth 1999 & above, code- MAX2000</p>
+           </div>
+           <div style={{border:"1px solid black",fontWeight:"bold",paddingLeft:"3px"}}> 
+           <p> <p style={{color:'red'}}> MISSED OFFER:</p> Flat 100 Off on 999 & above orders, code- NEW100 (First purchase only) </p>
+           </div>
+        
+           {data.map((item)=>{
+               return( 
+                   <>
+                   <div style={{display:"flex",border:"1px solid black"}}>
+                   <img src={item.image} alt=""  height="60px" width="80px"/>
+                   <div style={{paddingLeft:"10px"}}>
+                       <div style={{display:"flex"}}> <p style={{ fontSize:"30px"}}><BiRupee/></p> <p style={{fontSize:"20px",fontWeight:"bold"}}>  {item.Price}</p></div>
+                       
+                       <p>{item.Name}</p>
+                       <p>Size:-{item.Size}</p>
+                   </div>
 
-              </li>
-              <li>
-                <Link to="/basket">
-                  | Basket <LocalMallRoundedIcon />{" "}
-                </Link>
+
+                </div>
+               
+                </>
+               );
+            
+            
+
+           })}
+            
+               
+            <Button colorScheme='blue' variant='solid'>CHECKOUT</Button>   
+
+            
+      
+        </div>
+
+    </Popup>
+    
+               {/* End */}
+                  
+              
               </li>
             </ul>
             <label for="menu-btn" class="btn menu-btn">
