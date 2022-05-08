@@ -2,7 +2,8 @@
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap :20px;
-    width:80%;
+    width:84%;
+    border: 2px solid;
     margin:auto;
 }
 
@@ -53,14 +54,14 @@
 }
 
 .card_img>img{
-    height:300.5px;
+    height:439.5px;
     width:100%;
 }
 /* .card_header{
     text-align: center;
 } */
 .TopHead{
-    margin-left:10%;
+    margin-left:8%;
 }
 
 /* ///////////SELECT STYLING PART///////////////// */
@@ -79,7 +80,8 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     margin:auto;
-    width:80%;
+    width:84%;
+
     gap:20px;
     /* background-color: aqua; */
     
@@ -92,7 +94,7 @@
     height:40px;
     font-size:14px;
     /* border-color:gray; */
-    color:gray;
+    color:rgb(83, 82, 82);
     /* font-size: 16px; */
     /* background-color:azure; */
 

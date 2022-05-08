@@ -27,6 +27,7 @@ console.log(sortPrice);
 
   return (
     <>
+    <h1 className={style.TopHead}>Tops</h1>
       <div className={style.Sflex}>
       <div className={style.ssflex}>
 

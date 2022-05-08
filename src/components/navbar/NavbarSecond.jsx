@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React,{useState,useEffect}from "react";
 import { Link } from "react-router-dom";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
@@ -7,6 +8,12 @@ import Popup from 'reactjs-popup';
 import { Input,InputGroup,InputLeftAddon, PinInput, PinInputField } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 import { BiRupee } from 'react-icons/bi';
+=======
+import React from "react";
+import { Link } from "react-router-dom";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
+>>>>>>> Stashed changes
 
 import styled from "styled-components";
 
@@ -300,6 +307,7 @@ const Wrap = styled.div`
 export const NavbarSecond = () => {
   // const { token } = useContext(AuthContext);
   // use token to chnage the text from Login to Logout once logged in successfully
+<<<<<<< Updated upstream
   // signup
   const toast = useToast()
   const [formData,setForm]=useState("");
@@ -326,13 +334,20 @@ const [data,setItems]=useState([])
         }]
      setItems(cartitems)
     },[])
+=======
+>>>>>>> Stashed changes
 
   return (
     <>
       <Wrap>
         <nav>
+<<<<<<< Updated upstream
           <div className="wrapper">
             <Link className="logo" to="/">
+=======
+          <div class="wrapper">
+            <Link class="logo" to="/">
+>>>>>>> Stashed changes
               <img
                 style={{ width: "110px" }}
                 src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg"
@@ -341,6 +356,7 @@ const [data,setItems]=useState([])
             </Link>
             {/* <input type="radio" name="slider" id="menu-btn"/> */}
             {/* <input type="radio" name="slider" id="close-btn"/> */}
+<<<<<<< Updated upstream
             <ul className="nav-links">
               <li>
                 {" "}
@@ -355,25 +371,54 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/tops">
+=======
+            <ul class="nav-links">
+              <li>
+                {" "}
+                <Link class="desktop-item" to="/women">
+                  Women
+                </Link>
+                <label for="showMega" class="mobile-item"></label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Verieties of Women Dresses</header>
+                      <ul class="mega-links">
+                        <li>
+                          <Link class="desktop-item" to="/tops">
+>>>>>>> Stashed changes
                             Tops
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/bottoms">
+=======
+                          <Link class="desktop-item" to="/bottoms">
+>>>>>>> Stashed changes
                             Bottoms
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
+=======
+                          <Link class="desktop-item" to="/indian-wear">
+>>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
+=======
+                          <Link class="desktop-item" to="/accessories">
+>>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
                             Winterwear
                           </Link>
@@ -382,18 +427,36 @@ const [data,setItems]=useState([])
                       </ul>
                     </div>
                     <div className="row">
+=======
+                          <Link class="desktop-item" to="/winterwear">
+                            Winterwear
+                          </Link>
+                        </li>
+                        {/* <li><Link class="desktop-item" to="/more">More</Link></li> */}
+                      </ul>
+                    </div>
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Bottoms-Desktop2-05Nov2019.jpg"
                         alt="1"
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-SportsWear-Desktop1-05Nov2019.jpg"
                         alt="2"
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Winterwear-Desktop1-05Nov2019.jpg"
                         alt="3"
@@ -405,6 +468,7 @@ const [data,setItems]=useState([])
 
               <li>
                 {" "}
+<<<<<<< Updated upstream
                 <Link className="desktop-item" to="/men">
                   Men
                 </Link>
@@ -416,49 +480,94 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/shirt">
+=======
+                <Link class="desktop-item" to="/men">
+                  Men
+                </Link>
+                <label for="showMega" class="mobile-item"></label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Verieties of Men Dresses</header>
+                      <ul class="mega-links">
+                        <li>
+                          <Link class="desktop-item" to="/shirt">
+>>>>>>> Stashed changes
                             Shirts
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/pent">
+=======
+                          <Link class="desktop-item" to="/pent">
+>>>>>>> Stashed changes
                             Pents
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
+=======
+                          <Link class="desktop-item" to="/indian-wear">
+>>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
+=======
+                          <Link class="desktop-item" to="/accessories">
+>>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
+=======
+                          <Link class="desktop-item" to="/winterwear">
+>>>>>>> Stashed changes
                             Winterwear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/more">
+=======
+                          <Link class="desktop-item" to="/more">
+>>>>>>> Stashed changes
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Ethnicwear-Desktop1-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Tops-Desktop2-19May2021.jpg"
                         alt=""
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Bottoms-Desktop3-05Nov2019.jpg "
                         alt=""
@@ -470,6 +579,7 @@ const [data,setItems]=useState([])
 
               <li>
                 {" "}
+<<<<<<< Updated upstream
                 <Link className="desktop-item" to="/girls">
                   Girls
                 </Link>
@@ -481,49 +591,94 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/tops">
+=======
+                <Link class="desktop-item" to="/girls">
+                  Girls
+                </Link>
+                <label for="showMega" class="mobile-item"></label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Verieties of Girls Dresses</header>
+                      <ul class="mega-links">
+                        <li>
+                          <Link class="desktop-item" to="/tops">
+>>>>>>> Stashed changes
                             Tops
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/bottoms">
+=======
+                          <Link class="desktop-item" to="/bottoms">
+>>>>>>> Stashed changes
                             Bottoms
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
+=======
+                          <Link class="desktop-item" to="/indian-wear">
+>>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
+=======
+                          <Link class="desktop-item" to="/accessories">
+>>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
+=======
+                          <Link class="desktop-item" to="/winterwear">
+>>>>>>> Stashed changes
                             Winterwear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/more">
+=======
+                          <Link class="desktop-item" to="/more">
+>>>>>>> Stashed changes
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop1-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop2-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-OE-Desktop1-05May22.jpg"
                         alt=""
@@ -535,6 +690,7 @@ const [data,setItems]=useState([])
 
               <li>
                 {" "}
+<<<<<<< Updated upstream
                 <Link className="desktop-item" to="/boys">
                   Boys
                 </Link>
@@ -546,49 +702,94 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/shirt">
+=======
+                <Link class="desktop-item" to="/boys">
+                  Boys
+                </Link>
+                <label for="showMega" class="mobile-item"></label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>Verieties of Boys Dresses</header>
+                      <ul class="mega-links">
+                        <li>
+                          <Link class="desktop-item" to="/shirt">
+>>>>>>> Stashed changes
                             Shirts
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/pent">
+=======
+                          <Link class="desktop-item" to="/pent">
+>>>>>>> Stashed changes
                             Pents
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
+=======
+                          <Link class="desktop-item" to="/indian-wear">
+>>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
+=======
+                          <Link class="desktop-item" to="/accessories">
+>>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
+=======
+                          <Link class="desktop-item" to="/winterwear">
+>>>>>>> Stashed changes
                             Winterwear
                           </Link>
                         </li>
                         <li>
+<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/more">
+=======
+                          <Link class="desktop-item" to="/more">
+>>>>>>> Stashed changes
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-OE-Desktop1-05May2022.jpg"
                         alt=""
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-BabyBoy-Desktop4-04Mar2022.jpg"
                         alt=""
                       />
                     </div>
+<<<<<<< Updated upstream
                     <div className="row">
+=======
+                    <div class="row">
+>>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-Shoes-Desktop1-05Nov2019.jpg"
                         alt=""
@@ -602,13 +803,18 @@ const [data,setItems]=useState([])
                 <label>
                   <SearchOutlinedIcon />
                 </label>
+<<<<<<< Updated upstream
                 <input type="text" placeholder="What are you looking htmlFor?" />
+=======
+                <input type="text" placeholder="What are you looking for?" />
+>>>>>>> Stashed changes
               </div>
 
               <li>
                 <Link to="/signin">Sign Up</Link>{" "}
               </li>
               <li>
+<<<<<<< Updated upstream
             <Popup  trigger={<button>Sign In</button>}>
                   <div style={{marginLeft:"20px",margin:"auto",height:"400px",width:"600px",border:"1px solid white",borderRadius:"5px",marginTop:"50px",fontSize:"50px",paddingLeft:"10px",background:"white"}}>
    <h1>Sign-In Signup</h1>
@@ -741,6 +947,18 @@ color="blue"
             </ul>
             <label htmlFor="menu-btn" className="btn menu-btn">
               <i className="fas fa-bars"></i>
+=======
+                <Link to="/signin">Sign In</Link>
+              </li>
+              <li>
+                <Link to="/basket">
+                  | Basket <LocalMallRoundedIcon />{" "}
+                </Link>
+              </li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn">
+              <i class="fas fa-bars"></i>
+>>>>>>> Stashed changes
             </label>
           </div>
         </nav>

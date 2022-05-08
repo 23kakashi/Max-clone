@@ -9,14 +9,29 @@ const Men = () => {
     const [filterColor,setFilterColor] = useState("");
     const [sortPrice,setSortPrice] = useState("");
 
+    const [cart, setCart]=useState({})
+
+    var addToCart = JSON.parse(localStorage.getItem("cartItem")) || [];
+
     useEffect(() => {
         fetch(`http://localhost:8080/menspage`)
         .then((res) => res.json())
         .then((data) =>setShow(data))
         .catch((er) => console.log(er));
     }, []);
+
+    const handleAdd=(item)=>{
+      setCart(item)
+      addToCart.push(cart);
+      localStorage.setItem("cartItem", JSON.stringify(addToCart));
+   
+  console.log(cart);
+    }
+
+
   return (
     <>
+    <h1 className={style.TopHead}>Tops</h1>
 
 <div className={style.Sflex}>
 <div className={style.ssflex}>
@@ -184,7 +199,9 @@ const Men = () => {
                         <option>L</option>
                         <option>XL</option>
                     </select>
-                <button className={style.btn}>ADD TO BASKET</button>
+                <button className={style.btn}  onClick={()=>{ handleAdd(item)
+
+                 }}>ADD TO BASKET</button>
                 </div>
             </div>
 
