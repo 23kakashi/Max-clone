@@ -156,15 +156,42 @@
 .leftbar {
   height: auto;
   width: 900px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .righbar {
   height: 500px;
   width: 450px;
-  border: 1px solid red;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  
 }
 
 .mainbar {
   display: flex;
+}
+.sumarry{
+  height: 400px;
+  width: 450px;
+  border: 1px solid #ccc;
+  margin: auto;
+  text-align: center;
+}
+.sumarry2{
+height: 300px;
+width: 400px;
+ border-bottom: 1px solid #ccc;
+ border-top: 1px solid #ccc; 
+margin: auto;
+}
+.ways{
+  height: 200px;
+  width: 450px;
+  /* border: 1px solid red; */
+ 
+ 
+}
+.ways2{
+  display: flex;
+  gap: 20px;
 }

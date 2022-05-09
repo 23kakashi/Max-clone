@@ -5,6 +5,7 @@ import Payment_method from './Payment_method.jsx'
 import Payment_other from './Payment_other.jsx'
 import classes from "./Checkout.module.css";
 import Summary from './Summary.jsx'
+import Ways from './Ways.jsx'
 const Checkout = () => {
   return (
 
@@ -27,6 +28,7 @@ const Checkout = () => {
       </div>
       <div className={ classes.righbar}>
        <Summary/>
+       <Ways/>
       </div>
      </div>
      
