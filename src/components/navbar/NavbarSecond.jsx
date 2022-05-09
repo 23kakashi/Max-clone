@@ -823,9 +823,11 @@ export const NavbarSecond = () => {
                       );
                     })}
 
-                    <Button colorScheme="blue" variant="solid">
-                      CHECKOUT
-                    </Button>
+                    <Link to="checkout">
+                      <Button colorScheme="blue" variant="solid">
+                        CHECKOUT
+                      </Button>
+                    </Link>
                     <Link to="/basket">
                       <Button colorScheme="blue" variant="solid">
                         Basket

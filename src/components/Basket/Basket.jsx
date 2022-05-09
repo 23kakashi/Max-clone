@@ -4,7 +4,7 @@ import { RightSide } from "./RightSide";
 
 export const Basket = () => {
   const bsk = JSON.parse(localStorage.getItem('cartItem'))||[]
-  console.log(bsk)
+  // console.log(bsk)
 
   const [data, setdata] = React.useState(bsk);
   const [total, setTotal] = React.useState(0);
@@ -61,7 +61,7 @@ export const Basket = () => {
             return (
               <LeftSide
                 data={item}
-                key={item.id}
+                key={Math.random().toString()}
                 setData={setdata}
                 filter={handleFilter}
                 total={total}
