@@ -177,8 +177,7 @@
 .sumarry{
   height: 400px;
   width: 450px;
-  /* border: 1px solid #ccc; */
-  border: 1px solid red;
+  border: 1px solid #ccc;
   margin: auto;
   text-align: center;
 }
