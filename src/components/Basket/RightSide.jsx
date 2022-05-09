@@ -8,7 +8,7 @@ export const RightSide=(props)=>{
     const [pin,setPin] =React.useState("");
 
     const Checkpin=()=>{
-  if(pin==19002){
+  if(pin ===19002){
       isauth(!auth)
   }
   console.log(auth)

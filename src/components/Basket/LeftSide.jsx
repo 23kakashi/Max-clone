@@ -98,7 +98,7 @@ margin:"15px,"
     <>
       <div style={maindiv}>
         <div style={upperdiv}>
-          <img src={image_url} style={img} />
+          <img src={image_url} style={img} alt="item"/>
           <div style={innerdiv}>
             <h3 style={{margin:"7px 0"}}>{name}</h3>
             <h4 style={{marginBottom:"7px", fontWeight:"bolder"}}>₹{price}</h4>
