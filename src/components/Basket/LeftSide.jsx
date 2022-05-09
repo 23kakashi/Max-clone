@@ -3,7 +3,7 @@ import React from "react";
 export const LeftSide = (props) => {
   const maindiv = {
     width: "100%",
-    height: "350px",
+    height: "351px",
     margin: "10px 0"
   };
   const upperdiv = {
