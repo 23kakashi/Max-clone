@@ -5,6 +5,7 @@ const Basket = () => {
   var cart = JSON.parse(localStorage.getItem("cartItem")) || [];
   const [products, setProducts] = useState(cart);
 
+  let totalMrp = cart.map((item) => item.price).reduce((prev, curr) => prev + curr, 0)
   const handleRemove = (id) => {
     let newTodo = products.filter((item) => item.id !== id);
     setProducts(newTodo);
@@ -71,7 +72,7 @@ const Basket = () => {
           <div className="basketDiv3">
             <div className="basketDiv3flex1">
               <p>Total MRP</p>
-              <h3>$222</h3>
+              <h3>₹ {totalMrp}</h3>
             </div>
             <div className="basketDiv3flex2">
               <p>Shipping charge</p>

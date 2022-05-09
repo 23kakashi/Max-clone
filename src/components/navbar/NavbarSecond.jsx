@@ -611,10 +611,7 @@ export const NavbarSecond = () => {
                 <label>
                   <SearchOutlinedIcon />
                 </label>
-                <input
-                  type="text"
-                  placeholder="What are you looking for?"
-                />
+                <input type="text" placeholder="What are you looking for?" />
               </div>
 
               <li>
@@ -829,6 +826,11 @@ export const NavbarSecond = () => {
                     <Button colorScheme="blue" variant="solid">
                       CHECKOUT
                     </Button>
+                    <Link to="/basket">
+                      <Button colorScheme="blue" variant="solid">
+                        Basket
+                      </Button>
+                    </Link>
                   </div>
                 </Popup>
 

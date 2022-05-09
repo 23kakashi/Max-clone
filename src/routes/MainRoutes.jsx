@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Men from "../components/ProductPage/Men/Men";
 import Women from "../components/ProductPage/Women/Women";
+import Basket from "../components/ProductPage/Women/Basket"
 
 const MainRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const MainRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
+        <Route path="/basket" element={<Basket />} />
       </Routes>
       <Footer />
     </div>
