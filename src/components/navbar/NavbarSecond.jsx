@@ -788,7 +788,7 @@ export const NavbarSecond = () => {
 
                     {data.map((item) => {
                       return (
-                        <>
+                        <div key={Math.random().toString()}>
                           <div
                             style={{
                               display: "flex",
@@ -822,7 +822,7 @@ export const NavbarSecond = () => {
                               <p>Size:-{item.Size}</p>
                             </div>
                           </div>
-                        </>
+                        </div>
                       );
                     })}
 
