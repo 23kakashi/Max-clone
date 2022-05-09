@@ -7,14 +7,13 @@ import Checkout from "../components/Checkout/Checkout";
 const MainRoutes = () => {
   return (
     <div>
-           {/* <Navbar />
+           <Navbar />
       
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
 
-      <Footer /> */}
-      <Checkout/>
+      <Footer />
     </div>
   );
 };
