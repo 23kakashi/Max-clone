@@ -3,7 +3,6 @@
     grid-template-columns: repeat(4,1fr);
     gap :20px;
     width:84%;
-    border: 2px solid;
     margin:auto;
 }
 

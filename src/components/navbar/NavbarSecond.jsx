@@ -323,17 +323,9 @@ export const NavbarSecond = () => {
   const [data, setItems] = useState([]);
   // console.log(data)
   useEffect(() => {
-    //  let items= JSON.parse(localStorage.getItem("cartitems"));
-    let cartitems = [
-      {
-        image:
-          "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        Size: "xl",
-        Name: "Reebok Dress for Men",
-        Price: 349,
-      },
-    ];
-    setItems(cartitems);
+     let items= JSON.parse(localStorage.getItem("cartItems")) || [];
+ 
+    setItems(items);
   }, []);
 
   return (
