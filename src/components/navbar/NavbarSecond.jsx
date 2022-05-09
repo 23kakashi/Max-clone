@@ -1,19 +1,18 @@
-<<<<<<< Updated upstream
-import React,{useState,useEffect}from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
-import { useToast } from '@chakra-ui/react'
-import Popup from 'reactjs-popup';
-import { Input,InputGroup,InputLeftAddon, PinInput, PinInputField } from '@chakra-ui/react'
-import { Button } from '@chakra-ui/react'
-import { BiRupee } from 'react-icons/bi';
-=======
-import React from "react";
-import { Link } from "react-router-dom";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
->>>>>>> Stashed changes
+import { useToast } from "@chakra-ui/react";
+import Popup from "reactjs-popup";
+import {
+  Input,
+  InputGroup,
+  InputLeftAddon,
+  PinInput,
+  PinInputField,
+} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
+import { BiRupee } from "react-icons/bi";
 
 import styled from "styled-components";
 
@@ -307,47 +306,42 @@ const Wrap = styled.div`
 export const NavbarSecond = () => {
   // const { token } = useContext(AuthContext);
   // use token to chnage the text from Login to Logout once logged in successfully
-<<<<<<< Updated upstream
   // signup
-  const toast = useToast()
-  const [formData,setForm]=useState("");
-   var obj=[];
-   const handleForm=(e)=>{
-        e.preventDefault();
-        obj.push(formData)
-        localStorage.setItem("data",JSON.stringify(obj))
-   }
-   const handleClick=(e)=>{
-  const inputChange=e.target.name;
-  setForm({...formData,[inputChange]:e.target.value})
- }
-//  Basket
-const [data,setItems]=useState([])
-    // console.log(data)
-    useEffect(()=>{
-        //  let items= JSON.parse(localStorage.getItem("cartitems")); 
-        let cartitems=[{
-            image:"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-             Size:"xl",
-             Name:"Reebok Dress for Men",
-             Price:349  
-        }]
-     setItems(cartitems)
-    },[])
-=======
->>>>>>> Stashed changes
+  const toast = useToast();
+  const [formData, setForm] = useState("");
+  var obj = [];
+  const handleForm = (e) => {
+    e.preventDefault();
+    obj.push(formData);
+    localStorage.setItem("data", JSON.stringify(obj));
+  };
+  const handleClick = (e) => {
+    const inputChange = e.target.name;
+    setForm({ ...formData, [inputChange]: e.target.value });
+  };
+  //  Basket
+  const [data, setItems] = useState([]);
+  // console.log(data)
+  useEffect(() => {
+    //  let items= JSON.parse(localStorage.getItem("cartitems"));
+    let cartitems = [
+      {
+        image:
+          "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        Size: "xl",
+        Name: "Reebok Dress for Men",
+        Price: 349,
+      },
+    ];
+    setItems(cartitems);
+  }, []);
 
   return (
     <>
       <Wrap>
         <nav>
-<<<<<<< Updated upstream
           <div className="wrapper">
             <Link className="logo" to="/">
-=======
-          <div class="wrapper">
-            <Link class="logo" to="/">
->>>>>>> Stashed changes
               <img
                 style={{ width: "110px" }}
                 src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg"
@@ -356,7 +350,6 @@ const [data,setItems]=useState([])
             </Link>
             {/* <input type="radio" name="slider" id="menu-btn"/> */}
             {/* <input type="radio" name="slider" id="close-btn"/> */}
-<<<<<<< Updated upstream
             <ul className="nav-links">
               <li>
                 {" "}
@@ -371,54 +364,25 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/tops">
-=======
-            <ul class="nav-links">
-              <li>
-                {" "}
-                <Link class="desktop-item" to="/women">
-                  Women
-                </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
-                      <header>Verieties of Women Dresses</header>
-                      <ul class="mega-links">
-                        <li>
-                          <Link class="desktop-item" to="/tops">
->>>>>>> Stashed changes
                             Tops
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/bottoms">
-=======
-                          <Link class="desktop-item" to="/bottoms">
->>>>>>> Stashed changes
                             Bottoms
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
-=======
-                          <Link class="desktop-item" to="/indian-wear">
->>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
-=======
-                          <Link class="desktop-item" to="/accessories">
->>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
                             Winterwear
                           </Link>
@@ -427,36 +391,18 @@ const [data,setItems]=useState([])
                       </ul>
                     </div>
                     <div className="row">
-=======
-                          <Link class="desktop-item" to="/winterwear">
-                            Winterwear
-                          </Link>
-                        </li>
-                        {/* <li><Link class="desktop-item" to="/more">More</Link></li> */}
-                      </ul>
-                    </div>
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Bottoms-Desktop2-05Nov2019.jpg"
                         alt="1"
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-SportsWear-Desktop1-05Nov2019.jpg"
                         alt="2"
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Women-Winterwear-Desktop1-05Nov2019.jpg"
                         alt="3"
@@ -468,7 +414,6 @@ const [data,setItems]=useState([])
 
               <li>
                 {" "}
-<<<<<<< Updated upstream
                 <Link className="desktop-item" to="/men">
                   Men
                 </Link>
@@ -480,97 +425,52 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/shirt">
-=======
-                <Link class="desktop-item" to="/men">
-                  Men
-                </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
-                      <header>Verieties of Men Dresses</header>
-                      <ul class="mega-links">
-                        <li>
-                          <Link class="desktop-item" to="/shirt">
->>>>>>> Stashed changes
                             Shirts
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/pent">
-=======
-                          <Link class="desktop-item" to="/pent">
->>>>>>> Stashed changes
                             Pents
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
-=======
-                          <Link class="desktop-item" to="/indian-wear">
->>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
-=======
-                          <Link class="desktop-item" to="/accessories">
->>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
-=======
-                          <Link class="desktop-item" to="/winterwear">
->>>>>>> Stashed changes
                             Winterwear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/more">
-=======
-                          <Link class="desktop-item" to="/more">
->>>>>>> Stashed changes
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Ethnicwear-Desktop1-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Tops-Desktop2-19May2021.jpg"
                         alt=""
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Mens-Bottoms-Desktop3-05Nov2019.jpg "
-                        alt=""
+                        alt="1"
                       />
                     </div>
                   </div>
@@ -579,7 +479,6 @@ const [data,setItems]=useState([])
 
               <li>
                 {" "}
-<<<<<<< Updated upstream
                 <Link className="desktop-item" to="/girls">
                   Girls
                 </Link>
@@ -591,94 +490,49 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/tops">
-=======
-                <Link class="desktop-item" to="/girls">
-                  Girls
-                </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
-                      <header>Verieties of Girls Dresses</header>
-                      <ul class="mega-links">
-                        <li>
-                          <Link class="desktop-item" to="/tops">
->>>>>>> Stashed changes
                             Tops
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/bottoms">
-=======
-                          <Link class="desktop-item" to="/bottoms">
->>>>>>> Stashed changes
                             Bottoms
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
-=======
-                          <Link class="desktop-item" to="/indian-wear">
->>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
-=======
-                          <Link class="desktop-item" to="/accessories">
->>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
-=======
-                          <Link class="desktop-item" to="/winterwear">
->>>>>>> Stashed changes
                             Winterwear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/more">
-=======
-                          <Link class="desktop-item" to="/more">
->>>>>>> Stashed changes
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop1-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-Tops-Desktop2-05Nov2019.jpg"
                         alt=""
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Girls-OE-Desktop1-05May22.jpg"
                         alt=""
@@ -690,7 +544,6 @@ const [data,setItems]=useState([])
 
               <li>
                 {" "}
-<<<<<<< Updated upstream
                 <Link className="desktop-item" to="/boys">
                   Boys
                 </Link>
@@ -702,94 +555,49 @@ const [data,setItems]=useState([])
                       <ul className="mega-links">
                         <li>
                           <Link className="desktop-item" to="/shirt">
-=======
-                <Link class="desktop-item" to="/boys">
-                  Boys
-                </Link>
-                <label for="showMega" class="mobile-item"></label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
-                      <header>Verieties of Boys Dresses</header>
-                      <ul class="mega-links">
-                        <li>
-                          <Link class="desktop-item" to="/shirt">
->>>>>>> Stashed changes
                             Shirts
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/pent">
-=======
-                          <Link class="desktop-item" to="/pent">
->>>>>>> Stashed changes
                             Pents
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/indian-wear">
-=======
-                          <Link class="desktop-item" to="/indian-wear">
->>>>>>> Stashed changes
                             Indian Wear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/accessories">
-=======
-                          <Link class="desktop-item" to="/accessories">
->>>>>>> Stashed changes
                             Accessories
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/winterwear">
-=======
-                          <Link class="desktop-item" to="/winterwear">
->>>>>>> Stashed changes
                             Winterwear
                           </Link>
                         </li>
                         <li>
-<<<<<<< Updated upstream
                           <Link className="desktop-item" to="/more">
-=======
-                          <Link class="desktop-item" to="/more">
->>>>>>> Stashed changes
                             More
                           </Link>
                         </li>
                       </ul>
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-OE-Desktop1-05May2022.jpg"
                         alt=""
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-BabyBoy-Desktop4-04Mar2022.jpg"
                         alt=""
                       />
                     </div>
-<<<<<<< Updated upstream
                     <div className="row">
-=======
-                    <div class="row">
->>>>>>> Stashed changes
                       <img
                         src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/Max-Flyout-Boys-Shoes-Desktop1-05Nov2019.jpg"
                         alt=""
@@ -803,162 +611,232 @@ const [data,setItems]=useState([])
                 <label>
                   <SearchOutlinedIcon />
                 </label>
-<<<<<<< Updated upstream
-                <input type="text" placeholder="What are you looking htmlFor?" />
-=======
-                <input type="text" placeholder="What are you looking for?" />
->>>>>>> Stashed changes
+                <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                />
               </div>
 
               <li>
                 <Link to="/signin">Sign Up</Link>{" "}
               </li>
               <li>
-<<<<<<< Updated upstream
-            <Popup  trigger={<button>Sign In</button>}>
-                  <div style={{marginLeft:"20px",margin:"auto",height:"400px",width:"600px",border:"1px solid white",borderRadius:"5px",marginTop:"50px",fontSize:"50px",paddingLeft:"10px",background:"white"}}>
-   <h1>Sign-In Signup</h1>
-   <p style={{fontSize:"15px"}}>Enjoy the convenience of a single account across all participating brands</p>
-   <p style={{fontSize:"15px",fontWeight:"bold"}}>Mobile Number</p>
-     <form  onSubmit={handleForm} >
-     {/* <Inputs type="text" name="username" placeholder='Enter Username' onChange={handleClick}></Inputs>
+                <Popup trigger={<button>Sign In</button>}>
+                  <div
+                    style={{
+                      marginLeft: "20px",
+                      margin: "auto",
+                      height: "400px",
+                      width: "600px",
+                      border: "1px solid white",
+                      borderRadius: "5px",
+                      marginTop: "50px",
+                      fontSize: "50px",
+                      paddingLeft: "10px",
+                      background: "white",
+                    }}
+                  >
+                    <h1>Sign-In Signup</h1>
+                    <p style={{ fontSize: "15px" }}>
+                      Enjoy the convenience of a single account across all
+                      participating brands
+                    </p>
+                    <p style={{ fontSize: "15px", fontWeight: "bold" }}>
+                      Mobile Number
+                    </p>
+                    <form onSubmit={handleForm}>
+                      {/* <Inputs type="text" name="username" placeholder='Enter Username' onChange={handleClick}></Inputs>
      <Inputs type="password" name="password"  placeholder='Enter Password' onChange={handleClick}></Inputs> */}
-   
-<InputGroup  size='lg' border='2px solid blue' >
- <InputLeftAddon  border='none'children='+91' />
- <Input type='tel' border='none' name="mobileNumber" placeholder='phone number' onChange={handleClick}/>
-</InputGroup>
-<InputGroup size='lg'>
 
-<Input type='text'  name="Name" placeholder=' Enter Name' onChange={handleClick}/>
+                      <InputGroup size="lg" border="2px solid blue">
+                        <InputLeftAddon border="none" children="+91" />
+                        <Input
+                          type="tel"
+                          border="none"
+                          name="mobileNumber"
+                          placeholder="phone number"
+                          onChange={handleClick}
+                        />
+                      </InputGroup>
+                      <InputGroup size="lg">
+                        <Input
+                          type="text"
+                          name="Name"
+                          placeholder=" Enter Name"
+                          onChange={handleClick}
+                        />
+                      </InputGroup>
+                      <Popup
+                        trigger={
+                          <Button
+                            size="md"
+                            height="48px"
+                            width="200px"
+                            fontSize="2xl"
+                            position="center"
+                            marginLeft="50px"
+                            color="blue"
+                          >
+                            <input type="submit" />
+                          </Button>
+                        }
+                      >
+                        <div style={{ marginTop: "20px" }}>
+                          <h1>Enter The OTP</h1>
 
-</InputGroup>
-<Popup trigger={<Button 
- size='md'
-height='48px'
-width='200px'
+                          <PinInput>
+                            <PinInputField />
+                            <PinInputField />
+                            <PinInputField />
+                            <PinInputField />
+                          </PinInput>
+                        </div>
+                      </Popup>
+                    </form>
 
-fontSize="2xl"
-position="center"
-marginLeft="50px" 
-color="blue"
+                    <p style={{ fontSize: "15px" }}>
+                      By creating your account you agree to our{" "}
+                      <a
+                        href="https://www.maxfashion.in/in/en/termsandconditions"
+                        style={{ color: "blue" }}
+                      >
+                        Terms and Condition
+                      </a>
+                    </p>
 
+                    <Button
+                      onClick={() =>
+                        toast({
+                          title: "Account created.",
+                          description:
+                            "We've created your account htmlFor you.",
+                          status: "success",
+                          duration: 9000,
+                          isClosable: true,
+                        })
+                      }
+                    >
+                      submit
+                    </Button>
+                  </div>
+                </Popup>
+                {/* //end */}
+              </li>
+              <li style={{ marginLeft: "6px" }}>
+                {/* Start */}
+                <Popup
+                  trigger={
+                    <button style={{ fontSize: "18px" }}>
+                      Basket <LocalMallRoundedIcon />
+                    </button>
+                  }
+                >
+                  <div
+                    style={{
+                      height: "auto",
+                      width: "400px",
+                      border: "white",
+                      marginLeft: "200px",
+                      padding: "5px 5px 0px 5px",
+                      background: "white",
+                    }}
+                  >
+                    <p style={{ fontWeight: "bold" }}>
+                      Items Count:{data.length}
+                    </p>
+                    <div
+                      style={{
+                        border: " 1px solid black",
+                        fontWeight: "bold",
+                        paddingLeft: "3px",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <p style={{ color: "red" }}> MISSED OFFER:</p>Get 10%
+                        Off on shopping for Kidswear worth 999 & above, code-
+                        KIDS10
+                      </p>
+                    </div>
+                    <div
+                      style={{
+                        border: "1px solid black",
+                        fontWeight: "bold",
+                        paddingLeft: "3px",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <p style={{ color: "red" }}> MISSED OFFER:</p> Flat 200
+                        Off on shopping worth 1999 & above, code- MAX2000
+                      </p>
+                    </div>
+                    <div
+                      style={{
+                        border: "1px solid black",
+                        fontWeight: "bold",
+                        paddingLeft: "3px",
+                      }}
+                    >
+                      <p>
+                        {" "}
+                        <p style={{ color: "red" }}> MISSED OFFER:</p> Flat 100
+                        Off on 999 & above orders, code- NEW100 (First purchase
+                        only){" "}
+                      </p>
+                    </div>
 
-> 
-<input type="submit"/>
-</Button>}>
-  
-  <div style={{marginTop:"20px",}}>
-  <h1>Enter The OTP</h1>
-    
-    <PinInput  >
-    <PinInputField />
-    <PinInputField />
-    <PinInputField />
-    <PinInputField  />
-     </PinInput>
-  </div>
+                    {data.map((item) => {
+                      return (
+                        <>
+                          <div
+                            style={{
+                              display: "flex",
+                              border: "1px solid black",
+                            }}
+                          >
+                            <img
+                              src={item.image}
+                              alt=""
+                              height="60px"
+                              width="80px"
+                            />
+                            <div style={{ paddingLeft: "10px" }}>
+                              <div style={{ display: "flex" }}>
+                                {" "}
+                                <p style={{ fontSize: "30px" }}>
+                                  <BiRupee />
+                                </p>{" "}
+                                <p
+                                  style={{
+                                    fontSize: "20px",
+                                    fontWeight: "bold",
+                                  }}
+                                >
+                                  {" "}
+                                  {item.Price}
+                                </p>
+                              </div>
 
+                              <p>{item.Name}</p>
+                              <p>Size:-{item.Size}</p>
+                            </div>
+                          </div>
+                        </>
+                      );
+                    })}
 
- 
-</Popup>
+                    <Button colorScheme="blue" variant="solid">
+                      CHECKOUT
+                    </Button>
+                  </div>
+                </Popup>
 
-
-</form>
-
-
-<p style={{fontSize:"15px"}}>By creating your account you agree to our <a href="https://www.maxfashion.in/in/en/termsandconditions" style={{color:"blue"}}>Terms and Condition</a></p>
-
-
-<Button
-    onClick={() =>
-     toast({
-       title: 'Account created.',
-       description: "We've created your account htmlFor you.",
-       status: 'success',
-       duration: 9000,
-       isClosable: true,
-     })
-   }
- >
-   submit
-  
- </Button>
-
-
-
-   
-
-</div>
-</Popup>
-{/* //end */}
-</li>
-  <li style={{marginLeft:"6px"}}>
-               {/* Start */}
-               <Popup trigger={<button style={{fontSize:"18px"}}>Basket <LocalMallRoundedIcon/></button> }>
-            
-        <div style={{height:"auto",width:"400px",border:"white",marginLeft:"200px",padding:"5px 5px 0px 5px",background:"white"}}>
-        <p style={{fontWeight:"bold"}}>Items Count:{data.length}</p>
-            <div style={{border:" 1px solid black",fontWeight:"bold",paddingLeft:"3px"}}> 
-           <p> <p style={{color:'red'}}> MISSED OFFER:</p>Get 10% Off on shopping for Kidswear worth 999 & above, code- KIDS10</p>
-           </div>
-           <div style={{border:"1px solid black",fontWeight:"bold",paddingLeft:"3px"}}> 
-           <p> <p style={{color:'red'}}> MISSED OFFER:</p> Flat 200 Off on shopping worth 1999 & above, code- MAX2000</p>
-           </div>
-           <div style={{border:"1px solid black",fontWeight:"bold",paddingLeft:"3px"}}> 
-           <p> <p style={{color:'red'}}> MISSED OFFER:</p> Flat 100 Off on 999 & above orders, code- NEW100 (First purchase only) </p>
-           </div>
-        
-           {data.map((item)=>{
-               return( 
-                   <>
-                   <div style={{display:"flex",border:"1px solid black"}}>
-                   <img src={item.image} alt=""  height="60px" width="80px"/>
-                   <div style={{paddingLeft:"10px"}}>
-                       <div style={{display:"flex"}}> <p style={{ fontSize:"30px"}}><BiRupee/></p> <p style={{fontSize:"20px",fontWeight:"bold"}}>  {item.Price}</p></div>
-                       
-                       <p>{item.Name}</p>
-                       <p>Size:-{item.Size}</p>
-                   </div>
-
-
-                </div>
-               
-                </>
-               );
-            
-            
-
-           })}
-            
-               
-            <Button colorScheme='blue' variant='solid'>CHECKOUT</Button>   
-
-            
-      
-        </div>
-
-    </Popup>
-    
-               {/* End */}
-                  
-              
+                {/* End */}
               </li>
             </ul>
             <label htmlFor="menu-btn" className="btn menu-btn">
               <i className="fas fa-bars"></i>
-=======
-                <Link to="/signin">Sign In</Link>
-              </li>
-              <li>
-                <Link to="/basket">
-                  | Basket <LocalMallRoundedIcon />{" "}
-                </Link>
-              </li>
-            </ul>
-            <label for="menu-btn" class="btn menu-btn">
-              <i class="fas fa-bars"></i>
->>>>>>> Stashed changes
             </label>
           </div>
         </nav>
