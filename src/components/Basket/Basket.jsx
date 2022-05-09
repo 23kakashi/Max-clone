@@ -3,7 +3,8 @@ import { LeftSide } from "./LeftSide";
 import { RightSide } from "./RightSide";
 
 export const Basket = () => {
-  const bsk = JSON.parse(localStorage.getItem('cartItem'))
+  const bsk = JSON.parse(localStorage.getItem('cartItem'))||[]
+  console.log(bsk)
 
   const [data, setdata] = React.useState(bsk);
   const [total, setTotal] = React.useState(0);
@@ -37,9 +38,10 @@ export const Basket = () => {
     );
   }, [data]);
 
-  console.log(total);
+   
 
-  return (
+  
+     return (
     <>
       <div>
         <h1 style={{ fontSize: "40px", margin: "10px" }}>
