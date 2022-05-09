@@ -3,14 +3,19 @@ import CheckoutHeader from './CheckoutHeader.jsx'
 import ShippingMethod from './ShippingMethod.jsx'
 import Payment_method from './Payment_method.jsx'
 import Payment_other from './Payment_other.jsx'
+import classes from "./Checkout.module.css";
+import Summary from './Summary.jsx'
 const Checkout = () => {
   return (
 
-    <div>
+    <div  >
       <div>
         <CheckoutHeader />
       </div>
-      <div>
+
+     <div className={classes.mainbar}>
+     <div className={classes.leftbar}>
+      <div >
         <ShippingMethod />
       </div>
       <div>
@@ -19,6 +24,13 @@ const Checkout = () => {
       <div>
     <Payment_other/>
       </div>
+      </div>
+      <div className={ classes.righbar}>
+       <Summary/>
+      </div>
+     </div>
+     
+      
     </div>
 
 

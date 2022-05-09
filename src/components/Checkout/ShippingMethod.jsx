@@ -5,7 +5,8 @@ export const ShippingMethod = () => {
     <div className={classes.shipping_method}>
 
       <div className={classes.shipping_method2}>
-        <p style={{ fontSize: "14", marginBottom: "10px", fontWeight: "bold" }}>Add your shipping address</p>
+        {/* <p style={{ fontSize: "14", marginBottom: "10px", fontWeight: "bold" }}>Add your shipping address</p> */}
+        <h1 style={{ fontSize:"30px", marginBottom: "10px",fontWeight:"bold"}}>Add your shipping address</h1>
         <form>
           <label >First Name</label><br></br>
           <input type="text" placeholder='Enter your full name' ></input><br></br>
@@ -14,7 +15,7 @@ export const ShippingMethod = () => {
           <label >Pin Code</label><br></br>
           <input type="number" placeholder='Enter your pincode' ></input><br></br>
           <label >City</label><br></br>
-          <input type="number" placeholder='Enter your City or Tawn' ></input><br></br>
+          <input type="text" placeholder='Enter your City or Tawn' ></input><br></br>
           <label >State</label><br></br>
           <select id="country-state" name="country-state">
           <option value="" disabled selected hidden>Select your state</option>

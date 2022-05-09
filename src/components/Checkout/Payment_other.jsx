@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from "./Checkout.module.css"
+import Submit from './Submit'
 const Payment_other = () => {
     return (
         <div className={classes.Payment_other}>
@@ -39,6 +40,7 @@ const Payment_other = () => {
             <span>+ Rs49</span>
            </div>
             </div>
+            <Submit/>
         </div>
     )
 }
