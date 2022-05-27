@@ -7,6 +7,7 @@ const Banner = style.div`
   text-align: center;
   padding-top: 8px;
   color: #fff;
+  margin-top:5%;
 `;
 
 const Img = style.img`
@@ -21,7 +22,7 @@ const Home = () => {
           &#62;{" "}
         </p>
       </Banner>
-      <section style={{ width: "70%", margin: "20px auto" }}>
+      <section style={{ width: "70%", margin: "30px auto" }}>
         <div
           id="carouselExampleControls"
           className="carousel slide relative"

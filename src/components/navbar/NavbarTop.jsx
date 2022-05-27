@@ -12,8 +12,9 @@ const Wrapper = styled.div`
   font-size: 14px;
   padding: 5px 15%;
   color: white;
-  margin: auto;
+  margin-top:-5.2% ;
   overflow: hidden;
+  position:fixed;
 
 
   background-color: black;
