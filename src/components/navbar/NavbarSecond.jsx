@@ -281,7 +281,7 @@ const Wrap = styled.div`
   input {
     height: 35px;
     width: 250px;
-    margin-right: 150px;
+   
   }
   textarea:focus,
   input:focus {
@@ -301,6 +301,7 @@ const Wrap = styled.div`
     font-size: 45px;
     font-weight: 600;
   }
+ 
 `;
 
 export const NavbarSecond = () => {
