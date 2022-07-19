@@ -46,6 +46,7 @@ const Footer = () => {
 
               <div>
                 <img
+
                   style={{ width: "200px", marginLeft: "10px", height: "90px" }}
                   src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png"
                   alt="platstore"
