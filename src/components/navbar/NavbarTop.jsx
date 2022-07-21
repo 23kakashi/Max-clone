@@ -14,9 +14,9 @@ const Wrapper = styled.div`
   color: white;
   margin: auto;
   overflow: hidden;
-
-
-  background-color: black;
+  position: sticky;
+  z-index: 12;
+background-color: black;
 
   a {
     text-decoration: none;
